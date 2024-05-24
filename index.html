@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA NEGERI 1 AMBARAWA</title>
+    <link rel="icon" href="log-removebg-preview.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(smanega.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            width: 80%; /* Lebar default untuk layar besar */
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+            /* Media query untuk layar dengan lebar maksimal 768px */
+            @media (max-width: 768px) {
+        .container {
+            width: 95%; /* Lebar lebih besar untuk layar kecil */
+        }
+    }
+
+    /* Media query untuk layar dengan lebar maksimal 480px */
+    @media (max-width: 480px) {
+        .container {
+            width: 100%; /* Gunakan seluruh lebar layar untuk perangkat sangat kecil */
+            padding: 10px; /* Kurangi padding untuk menghemat ruang */
+        }
+    }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-size: cover;
+            animation: fadein 2s;
+        }
+        @keyframes fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+        }
+        .text-below-image {
+            text-align: center; /* Teks di tengah */
+            padding: 20px; /* Tambahkan padding untuk estetika */
+        }
+        .report-link {
+            display: block;
+            width: max-content;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: hwb(199 0% 0%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .report-link:hover {
+        background-color: hwb(185 1% 64% / 0.595);
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Selamat Datang di Pelaporan Kejadian SMANEGA</h1>
+        </header>
+            <div class="text-below-image">
+                <p>LAPORKAN KEJADIAN YANG ADA DI SMA NEGERI 1 AMBARAWA DISINI.</p>
+            </div>
+            <a href="https://forms.gle/QuUNnFkCPT62VKa67" class="report-link">Laporkan Kejadian</a>
+        </div>
+    <script>
+        window.onload = function() {
+            alert("Selamat datang! Semoga hari Anda menyenangkan.");
+        };
+    </script>
+</body>
+</html>
